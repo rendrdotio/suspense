@@ -12,7 +12,7 @@ interface State {
 class ErrorBoundary extends Component<Props, State> {
   state = { hasError: false };
 
-  static getDerivedStateFromError(error) {
+  static getDerivedStateFromError(error: any) {
     return { hasError: true };
   }
 
